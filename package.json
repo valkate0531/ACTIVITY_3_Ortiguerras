@@ -1,0 +1,23 @@
+{
+  "name": "activity_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "migrate": "node migrate.js",
+    "seed": "node seed.js",
+    "create:controller": "node scripts/create-controller.js",
+    "create:model": "node scripts/create-model.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-handlebars": "^9.0.2",
+    "inquirer": "^8.2.6",
+    "mysql2": "^3.24.5",
+    "sequelize": "^6.37.8"
+  }
+}

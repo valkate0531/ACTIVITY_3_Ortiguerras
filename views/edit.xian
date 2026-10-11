@@ -1,0 +1,12 @@
+{{> head}}
+<h1>Edit supply</h1>
+<form method="post" action="/update">
+  <input type="hidden" name="id" value="{{data.id}}">
+  <label>Name</label><input type="text" name="name" value="{{data.name}}" required><br>
+  <label>Category</label><input type="text" name="category" value="{{data.category}}"><br>
+  <label>Supplier</label><input type="text" name="supplier" value="{{data.supplier}}"><br>
+  <label>Stock</label><input type="number" name="stock" value="{{data.stock}}"><br>
+  <label>Price</label><input type="number" name="price" value="{{data.price}}" step="0.01"><br>
+  <input type="submit" value="Update">
+</form>
+<a href="/">Home</a>

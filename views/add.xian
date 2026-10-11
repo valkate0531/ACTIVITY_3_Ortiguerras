@@ -1,0 +1,11 @@
+{{> head}}
+<h1>Add supply</h1>
+<form method="post" action="/insert">
+	<label>Name</label><input type="text" name="name" required><br>
+	<label>Category</label><input type="text" name="category"><br>
+	<label>Supplier</label><input type="text" name="supplier"><br>
+	<label>Stock</label><input type="number" name="stock"><br>
+	<label>Price</label><input type="number" name="price" step="0.01"><br>
+	<input type="submit" value="Save">
+</form>
+<a href="/">Home</a>

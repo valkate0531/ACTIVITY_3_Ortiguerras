@@ -1,0 +1,35 @@
+{{> head}}
+<h1>Welcome to XianFires 🔥</h1>
+<p>Supply List</p>
+<a href="/add">Add new supply</a>
+
+<h2>All Supplies</h2>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Supplier</th>
+    <th>Stock</th>
+    <th>Price</th>
+    <th>Action</th>
+  </tr>
+  {{#each data}}
+  <tr>
+    <td>{{id}}</td>
+    <td>{{name}}</td>
+    <td>{{category}}</td>
+    <td>{{supplier}}</td>
+    <td>{{stock}}</td>
+    <td>{{price}}</td>
+    <td>
+      <a href="/edit/{{id}}">edit</a>
+      <a href="/delete/{{id}}">delete</a>
+    </td>
+  </tr>
+  {{else}}
+  <tr>
+    <td colspan="7">No supplies yet.</td>
+  </tr>
+  {{/each}}
+</table>
